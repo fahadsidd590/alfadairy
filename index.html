@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Alpha Dairy</title>
+<link rel="stylesheet" href="home.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" >
+<link rel="stylesheet" href="css/animated.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script type="text/javascript">
+
+function showopt(){
+	if(document.getElementById("cream").checked){
+		document.getElementById("milk1").style.visibility='visible';
+		}
+	else {
+		document.getElementById("milk1").style.visibility='hidden';
+		}		
+	}
+function showoptf(){
+	if(document.getElementById("fat").checked){
+		document.getElementById("milk2").style.visibility='visible';
+		}
+	else {
+		document.getElementById("milk2").style.visibility='hidden';
+		}		
+	}
+	
+function showoptfg(){
+	if(document.getElementById("fullghee").checked){
+		document.getElementById("milk3").style.visibility='visible';
+		}
+	else {
+		document.getElementById("milk3").style.visibility='hidden';
+		}		
+	}	
+function showoptlg(){
+	if(document.getElementById("lowghee").checked){
+		document.getElementById("milk4").style.visibility='visible';
+		}
+	else {
+		document.getElementById("milk4").style.visibility='hidden';
+		}		
+	}	
+function showoptb(){
+	if(document.getElementById("butter").checked){
+		document.getElementById("milk5").style.visibility='visible';
+		}
+	else {
+		document.getElementById("milk5").style.visibility='hidden';
+		}		
+	}	
+		
+function message(){
+	if(document.getElementById("name").value==""){
+		alert("Enter the name ");
+		}	
+	}
+function phonemessage(){
+	if(document.getElementById("phone").value==""){
+		alert("Enter the phone number ");
+		}	
+	}	
+function emailmessage(){
+	if(document.getElementById("email").value==""){
+		alert("Enter the email ");
+		}	
+	}	
+function addressmessage(){
+	if(document.getElementById("address").value==""){
+		alert("Enter the address ");
+		}	
+	}	
+function showdays(){
+	var ch = document.getElementById("change").value;
+	 if(ch== "1" || ch =="daily"){
+		 document.getElementById("hide").style.visibility='hidden';
+		 }
+		 else if(ch=="non"){
+			 alert("select proper schule");
+			 }
+		else if(ch=="alternet"){
+			
+			 document.getElementById("hide").style.visibility='visible';
+			} 
+	}
+
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="js/bootstrap.min.js" ></script>
+</head>
+
+<body>
+<div class="jumbotron-fluid img-jumbo">
+<!------------------------------------------header section---------------------------------->
+<section id = "nav-bar">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+  		<a class="navbar-brand" href="#"><img src="images/WhatsApp Image 2020-03-05 at 7.12.22 PM.jpeg" width="210px" height="60px" /></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls=			 						 		"navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+	</button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#process">About us</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#about">Why us</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#product">Products</a>
+ </li>
+             
+             <li class="nav-item">
+        <a class="nav-link" href="#footer">Contact Us</a>
+      </li>
+    
+       <li class="nav-item">
+        <a class="nav-link" href="#form">Order Now</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section >
+
+<!---------------------------------------------slider section------------------------------------->
+<section id= "slider">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+	<ol class="carousel-indicators">
+    		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	</ol>
+  	<div class="carousel-inner">
+   	  <div class="carousel-item active">
+     		 <img class="d-block w-100" src="images/1.webp" alt="First slide" width="100%" height="400px">
+       		<div class="carousel-caption d-none d-md-block">
+			  <h1 class="animated bounceInRight " style="animation-delay: 0.5s">Alpha Dairy</h1>    		
+                 	<p class="animated bounceInLeft " style="animation-delay: 0.5s">We provide you fresh milk</p>
+	    </div>
+	  </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Slider-2.jpg" alt="Second slide" width="100%" height="400px">
+          <div class="carousel-caption d-none d-md-block">
+    		<h5 class="animated bounceInRight " style="animation-delay: 0.5s">Fresh Milk</h5>
+    		<p class="animated bounceInLeft " style="animation-delay: 0.5s">We provide you fresh milk</p>
+	    </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/sliderpic-dairy2.jpg" alt="Third slide" width="100%" height="400px">
+          <div class="carousel-caption d-none d-md-block">
+    		<h5 class="animated bounceInRight " style="animation-delay: 0.5s">Fresh Milk</h5>
+    		<p class="animated bounceInLeft" style="animation-delay: 0.5s">We provide you fresh milk</p>
+	    </div>
+     </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+
+</section>
+
+<!------------------------About us------------------------------------->
+<section id = "process">
+  <div class="container text-center">
+	<h1 class"title1" style="color:#000; font-size:56px;">About Us</h1>
+				<div class="row ">
+					<div class="col-md process" >
+						<p>Alfa Dairy Farm Provide You Pure Fresh 100 % Natural Milk. That Is Free From Any Hormones And No Additives
+							Like Powder, Colour Artifical Taste Etc. Alfa Dairy Aim Is Provide To Our Customer Pure Fresh Milk From Our Own
+							Farm To Your DoorStep.</p>
+					</div>
+  				</div>
+  </div>
+</section>
+<!------------------------products--------------------------------->
+<section id = "product">
+	<div class="container text-center">
+			<h1 class"title1" style="color:#000; font-size:56px;">Product</h1>	
+            <div class="row">
+            	<div class="col-md-4">
+                	<div class="product-top">
+                    	<img src="images/56247c5d07e88.image.jpg" width="300px" height="300px"/>
+                         <div class="info">
+                            <h3>Milk</h3>
+                            <p>140perliter</p>
+                         </div>
+                    </div>
+                </div>
+          		<div class="col-md-4">
+                	<div class="product-top">
+                    	<img src="images/edendale-anchor-milk-eggs-anchor-uht-low-fat-milk-1l-3783228457047.webp" width="300px" height="300px"/>
+                         <div class="info">
+                            <h3>Milk</h3>
+                            <p>140perliter</p>
+                         </div>
+                    </div>
+                </div>    
+          		<div class="col-md-4">
+                	<div class="product-top">
+                    	<img src="images/download (2).jpg" width="300px" height="300px"/>
+                         <div class="info">
+                            <h3>Milk</h3>
+                            <p>140perliter</p>
+                         </div>
+                    </div>
+                </div>
+                
+           </div>
+           <div class="row">     
+          		<div class="col-md-4">
+                	<div class="product-top">
+                    	<img src="images/beauty-benefits-of-ghee.jpg" width="300px" height="300px"/>
+                         <div class="info">
+                            <h3>Milk</h3>
+                            <p>140perliter</p>
+                         </div>
+                    </div>
+                </div>
+           	  <div class="col-md-4">
+                	<div class="product-top">
+                    	<img src="images/Cheers-Desi-Ghee-lovers-–-Here-are-reasons-to-smile-1024x708.jpg" width="300px" height="300px"/>
+                         <div class="info">
+                          <h3>Milk</h3>
+                            <p>140perliter</p>
+                         </div>
+                    </div>
+                </div>
+            </div>    
+     </div> 
+</section>
+
+<!-----------------------------Process----------------------->
+
+
+<section id ="about">
+	<div class="container text-center">
+		<h1 class"title">WHY US?</h1>
+		<div class="row">
+			<div class="col-md-4 services" >
+				<img src="images/100.png" class="fresh"/>
+				<h3>100% Fresh</h3>
+			</div>
+			<div class="col-md-4 services" >
+				<img src="images/161_no-without-free-hormone-injection-512.png" class="fresh"/>
+				<h3>hormone free</h3>
+			</div>
+			<div class="col-md-4 services" >
+				<img src="images/vitamins_PNG56.png" class="fresh"/>
+				<h3>Rich vitamin</h3>
+			</div>
+		</div>
+	</div>
+</section>
+<!------------------------------Form----------------------------------------->
+<section id="form" >
+	<div class="container text-center">
+		<h1 class"title1" style="color:#FFF; font-size:56px;">Process</h1>
+		<div class="row ">
+			<div class="col-md-3 process" >
+				<img src="images/order.png" class="fresh1"/>
+				<h3>Order </h3>
+				<p>order 24hour <br/> RS:120/litre <br/></p>
+			</div>
+			<div class="col-md-3 process" >
+				<img src="images/114-1147238_home-delivery-logo-png.png" class="fresh1"/>
+				<h3>Delivery</h3>
+				<p> Delivery timing are 9:00AMto5:00pm</p>
+			</div>
+			<div class="col-md-3 process" >
+				<img src="images/boil_boiling_water_pan_boiling_water_pan_boiling_hot_boiling_water-512.png" class="fresh1"/>
+				<h3>Boil it</h3>
+				<p>Boil it before consuming</p>
+			</div>
+			<div class="col-md-3 process" >
+				<img src="images/drink-milk-healthy-child-water-512.png" class="fresh1"/>
+				<h3>Enjoy</h3>
+				<p>Drink healthy and fresh milk</p>
+			</div>
+		</div>
+	</div>
+  <div class="container carousel " style=" text-align:center">
+		<h1 class"title1" style="color:#090; font-size:56px;">Order Now</h1>
+	<form class="form-group animated bounceInRight">
+			<div class="row">
+				<div class="col-md-5 ">
+					<input type="text" id ="name" onblur="message()" name = "name" placeholder = "Enter your name" class="form-control animated 								 					bounceInRight" style="font-family:Georgia, 'Times New Roman', Times, serif;"/>
+				</div>
+				<div class="col-md-5" >
+					<input type="text" id="phone" onblur="phonemessage()" name = "phone" placeholder = "Enter your Phone number" class=				 					"form-control animated bounceInRight" style="font-family:Georgia, 'Times New Roman', Times, serif;"/>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-md-5 ">
+					<input type="text" name = "alternetnumber" placeholder = "Enter your alterneta number" class="form-control " style="font-family			 					:Georgia, 'Times New Roman', Times, serif; "/>
+				</div>
+				<div class="col-md-5" >
+					<input type="text" id="email" onblur="emailmessage()" name = "email" placeholder = "Enter your Email address" class= 						 					"form-control animated bounceInRight" style="font-family:Georgia, 'Times New Roman', Times, serif;"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<input type="text"  id="address" onblur="addressmessage()" align="absmiddle" name = "Address" placeholder = "Enter your address" class="form-control animated bounceInRight" style="font-family:Georgia, 'Times New Roman', Times, serif;"/>
+				</div>
+				<div class="col-md-5">
+       				<select name="area" class="form-control animated bounceInRight" style="font-family:Georgia, 'Times New Roman', Times, serif;">
+              			<option>Select your Area</option>
+              			<option>Garden East Karachi</option>
+              			<option>Jamshed Town Karachi</option>
+              			<option>PECHS karachi</option>
+              			<option>PIB colony Karachi</option>
+             			<option>Bahadurabad Gulshan-e-iqbal karachi</option>
+             			<option>Sindh Muslim CHS(SMCHS) Karachi</option>
+              			<option>Clifton karachi</option>
+          			</select>
+				</div>
+			</div>
+            <div class="row">
+            	<div class="col-md-4">
+                	<label style="color:#FFF; font-size:26px; margin-top:-40px;">
+                    Please Selecte the product
+                    </label>
+                </div>
+              </div>  
+               	<div class="row" style="margin-top:-30px;">
+			<div class="col-md-11" >  
+            	<div id="hide1">
+         			<input type="checkbox" id="cream" name="creammilk" value="creammilk" onclick="showopt(this.value)" />
+        			<label for="cream" style="color:#FFF; font-size:20px;">Full cream milk</label>
+         			<input type="checkbox" id="fat" name="fatmilk" value="fatmilk" onclick="showoptf(this.value)"/>
+              		<label for="fat" style="color:#FFF; font-size:20px; ">Low fat milk</label>
+         			<input type="checkbox" id="fullghee" value="fullfatghee"  onclick="showoptfg(this.value)"/>
+           			<label for="fullghee" style="color:#FFF; font-size:20px; ">Desi ghee full fat</label>
+             		<input type="checkbox" id="lowghee" value="lowgheefat" onclick="showoptlg(this.value)"/>
+           			<label for="lowghee" style="color:#FFF; font-size:20px; ">Desi ghee low fat</label>
+              		<input type="checkbox" id="butter" value="butter" onclick="showoptb(this.value)"/>
+           			<label for="butter" style="color:#FFF; font-size:20px; ">Butter</label>
+
+           		</div> 	   
+		  </div>
+		</div>
+            
+        
+			<div class="row">
+				<div class="col-md-5">
+       				<select name="creammilk" id="milk1"class="form-control animated bounceInRight" style="font-family:Georgia, 'Times New Roman', Times, 		 					serif; visibility:hidden;">
+            		   	<option>how many full cream milk liter do you want per delivary</option>
+              			<option>1kg</option>
+              			<option>2kg</option>
+             			<option>3kg</option>
+              			<option>4kg</option>
+              			<option>5kg</option>
+                 	</select>
+
+				</div>
+				<div class="col-md-5">
+       				<select name="lowfatmilk"id="milk2" class="form-control animated bounceInRight" style="font-family:Georgia, 'Times New Roman', Times, 			 					serif;visibility:hidden;">
+              			<option>how many low fat milk liter do you want per delivary</option>
+              			<option>1kg</option>
+              			<option>2kg</option>
+              			<option>3kg</option>
+              			<option>4kg</option>
+              			<option>5kg</option>
+       			  </select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+       				<select name="Desifullmilk" id="milk3"class="form-control animated bounceInRight" style="font-family:Georgia, 'Times New Roman', Times,				 					serif;visibility:hidden;">
+             			<option>how many desi Ghee full  fat do you want per delivary</option>
+              			<option>1kg</option>
+              			<option>2kg</option>
+              			<option>3kg</option>
+              			<option>4kg</option>
+              			<option>5kg</option>
+            		</select>
+				</div>
+				<div class="col-md-5">
+       				<select name="yogart" id="milk4"class="form-control animated bounceInRight" style="font-family:Georgia, 'Times New Roman', Times, serif;visibility:hidden;"			 						>
+    		          	<option>how many desi Ghee low fat do you want per delivary</option>
+              			<option>1kg</option>
+              			<option>2kg</option>
+              			<option>3kg</option>
+              			<option>4kg</option>
+              			<option>5kg</option>
+            		</select>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5">
+       			<select name="yogart" id="milk5"class="form-control animated bounceInRight" style="font-family:Georgia, 'Times New Roman', Times, serif;visibility:hidden;">
+              		<option>how many Butter do you want per delivary</option>
+              		<option>1kg</option>
+              		<option>2kg</option>
+              		<option>3kg</option>
+              		<option>4kg</option>
+              		<option>5kg</option>
+            	</select>
+			</div>
+			<div class="col-md-5">
+   				<select name="day" id = "change" onchange="showdays(this.value);" class="form-control animated bounceInRight" style="font-family: 									 				Georgia, 'Times New Roman', Times, serif;">
+        	      <option value="non">Delivery Frequency</option>
+            	  <option value="daily">Daily</option>
+              	  <option value="alternet">Alternet</option>
+            	</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">  
+            	<div id="hide" style="visibility:hidden;">
+         			<input type="checkbox" id="mon" name="monday" value="Monday" />
+        			<label for="mon" style="color:#FFF; font-size:20px; ">Monday</label>
+         			<input type="checkbox" id="tues" name="tuesaday" value="Tuesday"/>
+              		<label for="tues" style="color:#FFF; font-size:20px; ">Tuesday</label>
+         			<input type="checkbox" id="wed" value="Wednesday" />
+           			<label for="wed" style="color:#FFF; font-size:20px; ">Wednesday</label>
+             		<input type="checkbox" id="thu" value="thurasday" />
+           			<label for="thu" style="color:#FFF; font-size:20px; ">Thurasday</label>
+              		<input type="checkbox" id="fri" value="friday" />
+           			<label for="fri" style="color:#FFF; font-size:20px; ">Friday</label>
+             		<input type="checkbox" id="sat" value="satuarday" />
+           			<label for="sat" style="color:#FFF; font-size:20px; ">Satuarday</label>
+             		<input type="checkbox" id="sun" value="sunday" />
+           			<label for="sun" style="color:#FFF; font-size:20px; ">Sunday</label>
+           		</div> 	   
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+   				 <input type="submit" name= "submit"  class="btn-success animated bounceInRight"/>
+			</div>
+		</div>
+	</form>
+  </div>
+</section>
+</div>
+<!---------------------------------------footer section------------------------------------------>
+<section id="footer">
+  <div class="container">
+          <div class="row">
+          		<div class="col-md-2 footer">       
+ 				 <p><i class="fa fa-map-marker " aria-hidden="true"></i><a href="https://www.bing.com/maps?v=2&pc=FACEBK&mid=8100&rtp=%7Epos.24.884833479472_67.04959691694_Alfa+Dairy+Pakistan&cp=24.884833479472%7E67.04959691694&lvl=16&sty=r&rtop=0%7E0%7E0%7E&mode=D&FORM=FBKPL6&mkt=en-US&fbclid=IwAR0gTlHezsMBfz5VomoF6HoVc2zKa9J8xAK0ZhaDrfQllAVmUe9vXBJ3MuA" style="text-decoration:none; color:#000;"> Shop # 2 ML Homes Jamshed Road No 2 karachi</a></p>
+                 </div>
+                 <div class="col-md-6 footer" style="padding-top:30px;">
+                 <img src="images/WhatsApp Image 2020-03-05 at 7.12.22 PM.jpeg" width="250px" height="100px"/>
+ 				<!---- <p><i class="fa fa-mobile " aria-hidden="true"></i>  0321 1251955</p>----->
+                 </div>
+              
+                 <div class="col-md-4 footer">
+              
+ 				 <p><i class="fa fa-facebook-official " aria-hidden="true"></i><a href="https://www.facebook.com/Alfadairypakistan/"style="text-decoration:none; color:#000;">  Alfa Dairy Pakistan</a></p>
+               
+ 				 <p><i class="fa fa-whatsapp" aria-hidden="true"></i>   +923211251955</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>   +923462661100</p>
+                  <p><i class="fa fa-envelope" aria-hidden="true"></i>  abc@gamil.com</p>
+                
+                 </div>
+			</div>
+		</div>
+  </div>
+</section>
+
+<!--------------------smooth scroll------------------->
+<script src="js/smooth-scroll.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+</body>
+</html>
